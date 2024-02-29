@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPINIONIGNITE</title>
+    <link rel="icon" type="img"  href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('PROJECT.jpeg');
+            text-align: center;
+            background-size: 97%;
+            background-position: cover;
+        }
+
+        
+
+        #menu-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-box {
+            width: 200px;
+            height: 150px;
+            background-color: transparent; 
+            color: white;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #custom-column {
+            width: 200px;
+            height: 250px;
+            background-color: rgba(145, 122, 122, 0.397); 
+            color: white;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        #custom-text {
+            font-size: 30px; 
+            font-weight: bold;
+            color: red; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px;
+        }
+
+        #glowing-text {
+            font-size: 25px; 
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff8, 0 0 30px rgb(110, 48, 48);
+            animation: glowing 2s infinite;
+        }
+
+        @keyframes glowing {
+            0% {
+                color: #fff;
+            }
+            50% {
+                color: #ff8;
+            }
+            100% {
+                color: #f00;
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menu-container">
+        <div id="custom-column" onclick="location.href='custom-page.html'">
+            <div id="custom-text">
+                CUSTOM
+            </div>
+            <div id="glowing-text">
+                WRITE YOUR OWN OPINION AND START A DEBATE!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="location.href='about-us.html'">About Us</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+    </footer>
+</body>
+</html>

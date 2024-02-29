@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #connections-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .connections-button {
+            padding: 15px 30px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .connections-button:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Connections</h1>
+    </header>
+
+    <div id="connections-container">
+        <button class="connections-button" onclick="showOnline()">Online</button>
+        <button class="connections-button" onclick="showFriends()">Friends</button>
+        <button class="connections-button" onclick="showOffline()">Offline</button>
+    </div>
+
+    <div id="results">
+        
+    </div>
+
+    <script>
+        function showOnline() {
+            document.getElementById('results').innerHTML = '<p>Showing Online Connections...</p>';
+          
+        }
+
+        function showFriends() {
+            document.getElementById('results').innerHTML = '<p>Showing Friends...</p>';
+            
+        }
+
+        function showOffline() {
+            document.getElementById('results').innerHTML = '<p>Showing Offline Connections...</p>';
+            
+        }
+    </script>
+</body>
+</html>

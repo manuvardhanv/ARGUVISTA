@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoClash Debates</title>
+    <link rel="icon" type="img"  href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        #left-container {
+            width: 50%;
+            background-color: #67ec82; /* Light grey background on the left */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #right-container {
+            width: 50%;
+            background-color: #061b3e; /* Dark grey background on the right */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .column {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .column:hover {
+            transform: scale(1.1);
+        }
+
+        #first-column {
+            background-color: #4caf50; /* Green color */
+            color: white;
+        }
+
+        #second-column {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: 'UniqueFont', sans-serif;
+            font-size: 24px;
+        }
+
+        #top-right-section {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        BEST OF THE WEEK!
+    </header>
+
+    <div id="top-right-section">
+     ECOCLASH
+    </div>
+
+    <div id="left-container">
+        <div class="column" id="first-column" onclick="location.href='e1.html'">
+            <h2>CARBON TAX?</h2>
+            <img src="eco1.jpeg" alt="First Column Image" style="width: 70%">
+        </div>
+    </div>
+
+    <div id="right-container">
+        <div class="column" id="second-column" onclick="location.href='e2.html'">
+            <h2>WILL COP26 WORK?</h2>
+            <img src="eco2.jpeg" alt="Second Column Image" style="width: 70%">
+        </div>
+    </div>
+</body>
+</html>

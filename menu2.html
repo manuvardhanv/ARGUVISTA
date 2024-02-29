@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" type="img"  href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(menu2.png);
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        #menu-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-box {
+            width: 200px;
+            height: 150px;
+            background-color: #0e99f0; 
+            color: white;
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #moving-text-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+
+        #moving-text {
+            white-space: nowrap;
+            animation: moveText 10s linear infinite;
+            font-size: 16px;
+            color: #333; 
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+h1{
+    font-size: 70px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <button onclick="location.href='login.html'">Logout</button>
+        <button onclick="location.href='ABOUT.html'">About Us</button>
+        <button onclick="location.href='CONTACT.html'">Contact</button>
+    </header>
+
+    <div id="menu-container">
+        <div class="menu-box" onclick="location.href='HOT DEBATES.html'">
+            <h3>HOT DEBATES</h3>
+        </div>
+        <div class="menu-box" onclick="location.href='ACHIVEMENTS.html'">
+            <h3>ACHIEVEMENTS</h3>
+        </div>
+        <div class="menu-box" onclick="location.href='connections.html'">
+            <h3>CONNECTIONS</h3>
+        </div>
+        <div class="menu-box" onclick="location.href='DEBATOR OF THE MONTH.html'">
+            <h3>DEBATOR OF THE MONTH</h3>
+        </div>
+        <div class="menu-box" onclick="location.href='YOUR DEBATES.html'">
+            <h3>YOUR DEBATES</h3>
+        </div>
+        <div class="menu-box" onclick="location.href='menu.html'">
+            <h3>CUSTOMIZE</h3>
+        </div>
+        <div class="menu-box" onclick="location.href='home.html'">
+            <h3>HOME</h3>
+        </div>
+    </div>
+
+    <div id="moving-text-container">
+        <div id="moving-text">UNDER MAINTAINANCE!</div>
+    </div>
+</body>
+</html>

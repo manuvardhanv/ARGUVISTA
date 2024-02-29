@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debating Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fde2e4; 
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #info-section {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        #debate-container {
+            display: flex;
+            height: 80vh;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #user-side,
+        #opponent-side {
+            width: 45%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80%; 
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px; 
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #ff6f7d; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff5b6a; 
+        }
+
+        #achievements-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        #achievements-tooltip {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #achievements-button:hover #achievements-tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Debating Platform</h1>
+        <button id="achievements-button">Achievements
+            <span id="achievements-tooltip">list</span>
+        </button>
+    </header>
+
+    <div id="info-section">
+        <h2>Platform Information</h2>
+        <p>Player transfer in leagues: should regulations be in place to manage player transfers between different cricket leagues for fairness and player welfare?</p>
+    </div>
+
+    <div id="debate-container">
+        <div id="user-side">
+            <h2>Your Points</h2>
+            <textarea placeholder="Write your points..."></textarea>
+            <a href="CONNECTIONS.html"><button onclick="navigateToPage()">Send Invite</button></a>
+            <button>Find Similar User</button>
+        </div>
+
+        <div id="opponent-side">
+            <h2>Opponent's Points</h2>
+           
+        </div>
+    </div>
+
+    <script>
+        function navigateToPage() {
+           
+            window.location.href = 'your-page.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="icon" type="img"  href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #989393; 
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        #achievements-container {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .achievement-card {
+            width: 200px;
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            position: relative;
+        }
+
+        .achievement-card:hover {
+            transform: scale(1.05);
+        }
+
+        .achievement-badge {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .badge-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .achievement-card:hover .badge-info {
+            display: block;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button onclick="location.href='home.html'">Welcome</button>
+        <button onclick="location.href='ABOUT.html'">About Us</button>
+        <button onclick="location.href='CONTACT.html'">Contact</button>
+    </header>
+
+    <div id="achievements-container">
+        <div class="achievement-card">
+            <img src="first.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>First Debate Pioneer Badge</h3>
+                <p>
+                    Awarded to users who successfully participate in their first debate on the platform. This badge serves as a warm welcome and acknowledgment of their initiation into the debating community, encouraging new users to engage in discussions.
+                </p>
+            </div>
+            <h3>Achievement 1</h3>
+            <p>description about the achivement.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="badge2.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>Master Debater Badge</h3>
+                <p>
+                    Awarded to users who consistently demonstrate exceptional debate skills, constructive arguments, and engage in a high number of debates. This badge signifies a user's proficiency in presenting well-reasoned and compelling arguments.
+                </p>
+            </div>
+            <h3>Achievement 2</h3>
+            <p> description about the achievement.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="badge3.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>Diverse Thinker Badge</h3>
+                <p>
+                    Given to users who actively participate in debates across various categories. This badge encourages users to explore and contribute to a diverse range of topics, showcasing their versatility in discussions.
+                </p>
+            </div>
+            <h3>Achievement 3</h3>
+            <p> description about the achievement.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="badge4.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>Veteran Voice Badge</h3>
+                <p>
+                    Awarded to long-time members who have been actively engaging in debates on the platform for an extended period. This badge recognizes their commitment and contribution to fostering a vibrant debating community.
+                </p>
+            </div>
+            <h3>Achievement 4</h3>
+            <p> description about the achievement.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="badge5.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>Influential Contributor Badge</h3>
+                <p>
+                    Granted to users whose debates generate a significant amount of engagement, including likes, comments, and shares. This badge acknowledges users who have a positive impact on the community by sparking insightful discussions.
+                </p>
+            </div>
+            <h3>Achievement 5</h3>
+            <p> description about the achievement.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="badge6.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>Civic Engagement Badge</h3>
+                <p>
+                    Given to users who actively participate in debates related to politics, social issues, or civic responsibilities. This badge encourages users to engage in discussions that contribute to a better understanding of societal challenges and potential solutions.
+                </p>
+            </div>
+            <h3>Achievement 6</h3>
+            <p>description about the achievement.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="badge7.jpeg" alt="Achievement Badge" class="achievement-badge">
+            <div class="badge-info">
+                <h3>Active Contributor Badge</h3>
+                <p>
+                    Awarded to users who consistently contribute to debates over a certain period, showcasing their dedication to the platform. This badge is a simple yet effective way to recognize and appreciate users for their ongoing commitment to participating in discussions.
+                </p>
+            </div>
+            <h3>Achievement 7</h3>
+            <p> description about the achievement.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <button onclick="location.href='about-us.html'">About Us</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+    </footer>
+</body>
+</html>
